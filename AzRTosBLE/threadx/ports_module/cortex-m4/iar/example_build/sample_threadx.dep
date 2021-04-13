@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>3869267598</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\Obj\sample_threadx.o</file>
+            <file>$PROJ_DIR$\cstartup_M.s</file>
+            <file>$PROJ_DIR$\sample_threadx.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\tx.a</file>
+            <file>$PROJ_DIR$\tx_initialize_low_level.s</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\sample_threadx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
