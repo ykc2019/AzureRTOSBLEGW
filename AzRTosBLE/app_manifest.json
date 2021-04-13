@@ -1,0 +1,11 @@
+{
+  "SchemaVersion": 1,
+  "Name": "AzRTosBLE",
+  "ComponentId": "cd048041-43ef-438d-8daf-e6de7a277d99",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [],
+  "Capabilities": {
+    "Uart": [ "ISU0" ]
+  },
+  "ApplicationType": "RealTimeCapable"
+}
