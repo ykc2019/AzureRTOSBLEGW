@@ -14,10 +14,11 @@ set(MT3620_BASE_DIR mt3620_m4_software)
 set(MT3620_SAMPLE_DIR ${MT3620_BASE_DIR}/MT3620_M4_Sample_Code)
 set(MT3620_DRIVER_DIR ${MT3620_BASE_DIR}/MT3620_M4_DRIVER)
 set(MT3620_M4_BSP_DIR ${MT3620_BASE_DIR}MT3620_M4_BSP)
+set(RTAPP_SRC_DIR rtapp)
 set (APP_SRC
-      ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_adc.c
-        ${MT3620_SAMPLE_DIR}//OS_HAL/src/os_hal_dma.c
-        ${MT3620_SAMPLE_DIR}//OS_HAL/src/os_hal_eint.c
+    ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_adc.c
+    ${MT3620_SAMPLE_DIR}//OS_HAL/src/os_hal_dma.c
+    ${MT3620_SAMPLE_DIR}//OS_HAL/src/os_hal_eint.c
     ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_gpio.c
     ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_gpioif.c
     ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_gpt.c
@@ -27,9 +28,9 @@ set (APP_SRC
     ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_spim.c
     ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_uart.c
     ${MT3620_SAMPLE_DIR}/OS_HAL/src/os_hal_wdt.c
-    app_threadx.c
-    "rtcoremain.c"
-    tx_initialize_low_level.S
+    ${RTAPP_SRC_DIR}/app_threadx.c
+    ${RTAPP_SRC_DIR}/rtcore_main.c
+    ${RTAPP_SRC_DIR}/tx_initialize_low_level.S
 
     )
 
